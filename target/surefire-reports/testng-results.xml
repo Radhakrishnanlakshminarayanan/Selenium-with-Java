@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="2" failed="1" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-04-16T09:39:34 EDT" name="Suite" finished-at="2024-04-16T09:40:05 EDT" duration-ms="30968">
+    <groups>
+      <group name="Purchase">
+        <method signature="StandAloneTest.submitOrder(java.util.HashMap)[pri:0, instance:ChaitanyaLearning.StandAloneTest@402c4085]" name="submitOrder" class="ChaitanyaLearning.StandAloneTest"/>
+      </group> <!-- Purchase -->
+      <group name="Error Handling">
+        <method signature="ErrorValidations.submitOrder()[pri:0, instance:ChaitanyaLearning.ErrorValidations@5e7cd6cc]" name="submitOrder" class="ChaitanyaLearning.ErrorValidations"/>
+      </group> <!-- Error Handling -->
+    </groups>
+    <test started-at="2024-04-16T09:39:34 EDT" name="ErrorValidation" finished-at="2024-04-16T09:39:49 EDT" duration-ms="14789">
+      <class name="ChaitanyaLearning.ErrorValidations">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ChaitanyaLearning.ErrorValidations@5e7cd6cc]" started-at="2024-04-16T09:39:34 EDT" name="launchApplication" finished-at="2024-04-16T09:39:43 EDT" duration-ms="8606" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder()[pri:0, instance:ChaitanyaLearning.ErrorValidations@5e7cd6cc]" started-at="2024-04-16T09:39:43 EDT" name="submitOrder" finished-at="2024-04-16T09:39:44 EDT" duration-ms="1118" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ChaitanyaLearning.ErrorValidations@5e7cd6cc]" started-at="2024-04-16T09:39:44 EDT" name="tearDown" finished-at="2024-04-16T09:39:49 EDT" duration-ms="5026" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ChaitanyaLearning.ErrorValidations -->
+    </test> <!-- ErrorValidation -->
+    <test started-at="2024-04-16T09:39:34 EDT" name="StandAloneTest" finished-at="2024-04-16T09:40:05 EDT" duration-ms="30968">
+      <class name="ChaitanyaLearning.StandAloneTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ChaitanyaLearning.StandAloneTest@402c4085]" started-at="2024-04-16T09:39:34 EDT" name="launchApplication" finished-at="2024-04-16T09:39:43 EDT" duration-ms="8474" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:ChaitanyaLearning.StandAloneTest@402c4085]" started-at="2024-04-16T09:39:43 EDT" name="submitOrder" data-provider="dataToBeUsed" finished-at="2024-04-16T09:39:45 EDT" duration-ms="2025" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=988507chaitU., product=ZARA COAT 3, email=john.reeves@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <button _ngcontent-cre-c33="" routerlink="/dashboard/cart" class="btn btn-custom" style="margin-top: -10px;" tabindex="0">...</button> is not clickable at point (1205, 27). Other element would receive the click: <div _ngcontent-cre-c31="" class="ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed; opacity: 1;">...</div>
+  (Session info: chrome-headless-shell=123.0.6312.106)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c0a502453484af74c1b362cf51d3f5a9, clickElement {id=f.FE889B1182B4794866A1F8CF283A4357.d.3556B15DF3C53A8A890FB4642C7DB0A5.e.22}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 123.0.6312.106, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: C:\Users\chait\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58520}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58520/devtoo..., se:cdpVersion: 123.0.6312.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome-headless-shell on windows (c0a502453484af74c1b362cf51d3f5a9)] -> css selector: [routerlink*=cart]]
+Session ID: c0a502453484af74c1b362cf51d3f5a9]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button _ngcontent-cre-c33="" routerlink="/dashboard/cart" class="btn btn-custom" style="margin-top: -10px;" tabindex="0">...</button> is not clickable at point (1205, 27). Other element would receive the click: <div _ngcontent-cre-c31="" class="ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed; opacity: 1;">...</div>
+  (Session info: chrome-headless-shell=123.0.6312.106)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c0a502453484af74c1b362cf51d3f5a9, clickElement {id=f.FE889B1182B4794866A1F8CF283A4357.d.3556B15DF3C53A8A890FB4642C7DB0A5.e.22}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 123.0.6312.106, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: C:\Users\chait\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58520}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58520/devtoo..., se:cdpVersion: 123.0.6312.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome-headless-shell on windows (c0a502453484af74c1b362cf51d3f5a9)] -> css selector: [routerlink*=cart]]
+Session ID: c0a502453484af74c1b362cf51d3f5a9
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
+at AbstractComponents.AbstractComponent.goToCart(AbstractComponent.java:32)
+at ChaitanyaLearning.StandAloneTest.submitOrder(StandAloneTest.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ChaitanyaLearning.StandAloneTest@402c4085]" started-at="2024-04-16T09:39:45 EDT" name="tearDown" finished-at="2024-04-16T09:39:50 EDT" duration-ms="5033" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ChaitanyaLearning.StandAloneTest@402c4085]" started-at="2024-04-16T09:39:50 EDT" name="launchApplication" finished-at="2024-04-16T09:39:56 EDT" duration-ms="6345" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:ChaitanyaLearning.StandAloneTest@402c4085]" started-at="2024-04-16T09:39:56 EDT" name="submitOrder" data-provider="dataToBeUsed" finished-at="2024-04-16T09:40:00 EDT" duration-ms="3629" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=988507chaitU., product=ADIDAS ORIGINAL, email=john.reeves@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ChaitanyaLearning.StandAloneTest@402c4085]" started-at="2024-04-16T09:40:00 EDT" name="tearDown" finished-at="2024-04-16T09:40:05 EDT" duration-ms="5028" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="submitOrderToGetOrders()[pri:0, instance:ChaitanyaLearning.StandAloneTest@402c4085]" started-at="2024-04-16T09:40:05 EDT" name="submitOrderToGetOrders" finished-at="2024-04-16T09:40:05 EDT" depends-on-methods="ChaitanyaLearning.StandAloneTest.submitOrder" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method ChaitanyaLearning.StandAloneTest.submitOrderToGetOrders() on instance ChaitanyaLearning.StandAloneTest@402c4085 depends on not successfully finished methods 
+[ChaitanyaLearning.StandAloneTest.submitOrder() on instance ChaitanyaLearning.StandAloneTest@402c4085]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method ChaitanyaLearning.StandAloneTest.submitOrderToGetOrders() on instance ChaitanyaLearning.StandAloneTest@402c4085 depends on not successfully finished methods 
+[ChaitanyaLearning.StandAloneTest.submitOrder() on instance ChaitanyaLearning.StandAloneTest@402c4085]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrderToGetOrders -->
+      </class> <!-- ChaitanyaLearning.StandAloneTest -->
+    </test> <!-- StandAloneTest -->
+  </suite> <!-- Suite -->
+</testng-results>
